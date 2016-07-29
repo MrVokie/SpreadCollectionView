@@ -1,0 +1,2 @@
+# SpreadCollectionView
+折叠展开/内容左右滑动的CollectionView
