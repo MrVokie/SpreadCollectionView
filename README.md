@@ -5,7 +5,7 @@
 
 效果图：
 
-![效果](/images/collectionview/show.gif)
+![效果](https://github.com/MrVokie/SpreadCollectionView/blob/master/show.gif)
 
 控件结构关系简介：
 
