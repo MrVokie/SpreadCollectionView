@@ -238,7 +238,6 @@
 				TargetAttributes = {
 					FE3F0AC31B626E19001F0157 = {
 						CreatedOnToolsVersion = 6.1;
-						DevelopmentTeam = 5KT527ZH2W;
 					};
 					FE3F0AD61B626E19001F0157 = {
 						CreatedOnToolsVersion = 6.1;
@@ -417,6 +416,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/SpreadCollectionView/PrefixHeader.pch";
 				INFOPLIST_FILE = SpreadCollectionView/Info.plist;
@@ -434,6 +434,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/SpreadCollectionView/PrefixHeader.pch";
 				INFOPLIST_FILE = SpreadCollectionView/Info.plist;

@@ -2,8 +2,8 @@
 //  RootViewController.m
 //  Lesson_collectionView
 //
-//  Created by 张祥 on 15/7/1.
-//  Copyright (c) 2015年 张祥. All rights reserved.
+//  Created by Vokie on 15/7/1.
+//  Copyright (c) 2015年 Vokie. All rights reserved.
 //
 
 #import "RootViewController.h"
@@ -120,31 +120,14 @@
 }
 
 
-
-
-
-
 #pragma mark - 获取详情列表数据，本地plist加载
 
 - (void)getDataFromLocal {
-    NSFileManager *filer = [NSFileManager defaultManager];
-    NSString *dou = [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES) firstObject];
-    
-    NSString *filePath = [dou stringByAppendingPathComponent:@"Preferences/LocalData.plist"];
-    
     NSString *filePathLocal = [[NSBundle mainBundle] pathForResource:@"LocalData" ofType:@"plist"];
     
-    if ([filer fileExistsAtPath:filePath] || filePathLocal) {
-        
-        //在Xcode7上面，这种用本地文件初始化一个object对象的方法，如果直接用一个字典接收不知道是什么原因，是没有值的，但是当把这个字典写成属性的时候再去接收便可以
-        //要知道在Xcode7以下的版本上这样写是没有问题的
-        //NSDictionary *dic = [NSDictionary dictionaryWithContentsOfFile:filePath];
-        NSDictionary *tempDic = [NSDictionary dictionaryWithContentsOfFile:filePath ? filePath : filePathLocal];
-        
-        //NSDictionary *dic = self.tempDic[@"localData"];
-        //在这里也是和上面一样,不知道是什么原因,不知道是不是Xcode7新增的什么安全机制还是怎样
+    if (filePathLocal) {
+        NSDictionary *tempDic = [NSDictionary dictionaryWithContentsOfFile:filePathLocal];
         NSDictionary *localDic = tempDic[@"localData"];
-        
         
         NSArray *dataAry = localDic[@"data"];
         

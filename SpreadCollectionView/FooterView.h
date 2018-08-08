@@ -2,8 +2,8 @@
 //  FooterView.h
 //  test
 //
-//  Created by 张祥 on 15/7/1.
-//  Copyright (c) 2015年 张祥. All rights reserved.
+//  Created by Vokie on 15/7/1.
+//  Copyright (c) 2015年 Vokie. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
